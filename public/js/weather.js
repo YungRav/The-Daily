@@ -46,6 +46,7 @@ $(document).ready(() => {
         $("#today").empty();
 
         // create html content for current weather
+        // will need to get this into Handlebars instead of building it into the JS
         const title = $("<h3>")
           .addClass("card-title")
           .text(data.name + " (" + new Date().toLocaleDateString() + ")");
