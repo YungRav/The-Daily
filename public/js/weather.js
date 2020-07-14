@@ -14,11 +14,10 @@ $(document).ready(() => {
       dataType: "json",
       success: function(data) {
         console.log(data);
-        const tempToday = data.main.temp;
+        //const tempToday = data.main.temp;
       }
     });
   }
-
 
   searchWeather();
 });
