@@ -47,10 +47,5 @@ module.exports = function(app) {
     }
   });
 
-  //quote of the day API get call, passing the response with "quote"
-  app.get("https://quotes.rest/qod", (req, res) => {
-    res.json({
-      quote: res
-    });
-  });
+  
 };
