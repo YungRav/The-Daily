@@ -46,4 +46,9 @@ module.exports = function(app) {
       });
     }
   });
+  // Route for getting the weather
+  app.get("/api/weather", (req, res) => {
+    req.searchWeather();
+    res.redirect("/");
+  });
 };
