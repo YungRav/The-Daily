@@ -3,5 +3,12 @@ module.exports = function(sequelize, DataTypes) {
     text: DataTypes.STRING,
     complete: DataTypes.BOOLEAN
   });
+  Todo.associate = function(models) {
+    Todo.belongsTo(models.User, {
+      foreignKey: {
+        allowNull: false
+      }
+    });
+  };
   return Todo;
 };
