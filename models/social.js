@@ -8,6 +8,13 @@ module.exports = function(sequelize, DataTypes) {
     instagram: { type: DataTypes.BOOLEAN, defaultValue: 0 },
     youtube: { type: DataTypes.BOOLEAN, defaultValue: 0 }
   });
+  Social.associate = function(models) {
+    Social.belongsTo(models.User, {
+      foreignKey: {
+        allowNull: false
+      }
+    });
+  };
   return Social;
 };
 
