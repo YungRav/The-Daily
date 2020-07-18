@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding:0; 
+}
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:17px;
+    line-height: 1.6;
+}
+
+#welcome{
+    background-color:lightskyblue;
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+#welcome h1{
+    color:white;
+    font-size: 50px;
+}
+
+#welcome h2{
+    color:white;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+#welcome .button{
+    font-size:18px;
+    text-decoration:none;
+    color:white;
+    border:white 1px solid;
+    padding: 10px 25px;
+    border-radius:10px
+}
+
+.topnav {
+    background-color:white;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: lightskyblue;
+    color: black;
+  }
