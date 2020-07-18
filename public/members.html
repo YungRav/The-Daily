@@ -1,23 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-  <title>Passport Authentication</title>
+  <title>The Daily</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
-  <link href="stylesheets/style.css" rel="stylesheet">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css'>
+  <link href="stylesheets/members.css" rel="stylesheet">
 </head>
 
+
+
 <body>
+
   <div class="topnav">
     <img src="./images/logo.PNG" width="140" height="50" halt="Logo">
+
     <a class="active" href="home.html">Home</a>
     <a href="login.html">Login</a>
     <a href="signup.html">Sign Up</a>
     <a href="members.html">My Dashboard</a>
+  </nav>
+
+  <div class= "row toprow">
+    <!-- Weather Card -->
+      <div class= "col col-md-5 ">
+        <div class="card">
+
+          <h2>Savannah</h2>
+          <h3>Cloudy<span>Wind 10km/h <span class="dot">•</span> Precip 0%</span></h3>
+          <h1>95°</h1>
+          <div class="sky">
+              <div class="sun"></div>
+              <div class="cloud">
+                  <div class="circle-small"></div>
+                  <div class="circle-tall"></div>
+                  <div class="circle-medium"></div>
+              </div>
+          </div>
+          <table>
+              <tr>
+                  <td>SAT</td>
+                  <td>SUN</td>
+                  <td>MON</td>
+                  <td>TUE</td>
+                  <td>WED</td>
+              </tr>
+              <tr>
+                  <td>95°</td>
+                  <td>95°</td>
+                  <td>97°</td>
+                  <td>91°</td>
+                  <td>98°</td>
+              </tr>
+              <tr>
+                  <td>78°</td>
+                  <td>81°</td>
+                  <td>77°</td>
+                  <td>82°</td>
+                  <td>83°</td>
+              </tr>
+          </table>
+      </div>
+      </div>
+    <!-- QoD Card -->
+      <div class= "col col-md-5 ">
+        <div class="card">
+        <h2>Quote of the Day</h2>
+          <p>Life consists not in holding good cards, but in playing those you hold well.
+          </p>
+          <cite>Josh Billings</cite>
+        </div>
+      </div>
+  </div>
+  <div class= "row bottomrow">
+    <!-- News Card -->
+    <div class= "col col-md-5 ">
+      <div class="card todolist">
+        <h2>Top News</h2>
+        <ul>
+          <li><a href="https://www.bbc.com/news/world-europe-53451478">
+            'Rambo' suspect Yves Rausch held in Black Forest after five-day hunt</a></li>
+            <br>
+            <br>
+          <li><a href="https://www.bbc.com/news/world-us-canada-53452080">
+            Why I Fell In Love With Irish Step Dancing</a></li>
+            <br>
+            <br>
+          <li><a href="https://www.topgear.com/car-news/heres-every-generation-ford-bronco#1">
+            Here’s every generation of Ford Bronco</a></li>
+            <br>
+            <br>
+          <li><a href="https://www.bbc.com/future/article/20200714-is-it-safe-to-microwave-food">
+            Is it safe to microwave food?</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class= "col col-md-5 ">
+      <!-- Todo List -->
+      <div class=" card todolist not-done">
+        <h2>Todos</h2>
+           <input type="text" class="form-control add-todo" placeholder="Add todo">
+               <button id="checkAll" class="btn btn-success">Mark all as done</button>
+               
+               <hr>
+               <ul id="sortable" class="list-unstyled">
+               <li class="ui-state-default">
+                   <div class="checkbox">
+                       <label>
+                           <input type="checkbox" value="" />Take out the trash</label>
+                   </div>
+               </li>
+               <li class="ui-state-default">
+                   <div class="checkbox">
+                       <label>
+                           <input type="checkbox" value="" />Buy bread</label>
+                   </div>
+               </li>
+               <li class="ui-state-default">
+                   <div class="checkbox">
+                       <label>
+                           <input type="checkbox" value="" />Teach penguins to fly</label>
+                   </div>
+               </li>
+           </ul>
+           <div class="todo-footer">
+               <strong><span class="count-todos"></span></strong> Items Left
+           </div>
+       </div>
+    </div>
   </div>
 </body>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>   
+<script src='../js/todo.js'></script>
 
 <body>
   <div class="row">
