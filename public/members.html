@@ -22,7 +22,8 @@
   </nav>
 
   <div class= "row toprow">
-      <div class= "col col-md-6 ">
+    <!-- Weather Card -->
+      <div class= "col col-md-5 ">
         <div class="card">
 
           <h2>Savannah</h2>
@@ -61,22 +62,73 @@
           </table>
       </div>
       </div>
-      <div class= "col col-md-6 ">
-        <blockquote class="card">
-          <p>Your quote here. Edit it however you want. You can change the color by making changes to the CSS file. The code and CSS of Bootstrap 4 is in the associated tutorial zip file.
+    <!-- QoD Card -->
+      <div class= "col col-md-5 ">
+        <div class="card">
+        <h2>Quote of the Day</h2>
+          <p>Life consists not in holding good cards, but in playing those you hold well.
           </p>
-          <cite>quote attribution</cite>
-          </blockquote>
+          <cite>Josh Billings</cite>
+        </div>
       </div>
   </div>
   <div class= "row bottomrow">
-    <div class= "col col-md-6 ">
-      
+    <!-- News Card -->
+    <div class= "col col-md-5 ">
+      <div class="card todolist">
+        <h2>Top News</h2>
+        <ul>
+          <li><a href="https://www.bbc.com/news/world-europe-53451478">
+            'Rambo' suspect Yves Rausch held in Black Forest after five-day hunt</a></li>
+            <br>
+            <br>
+          <li><a href="https://www.bbc.com/news/world-us-canada-53452080">
+            Why I Fell In Love With Irish Step Dancing</a></li>
+            <br>
+            <br>
+          <li><a href="https://www.topgear.com/car-news/heres-every-generation-ford-bronco#1">
+            Here’s every generation of Ford Bronco</a></li>
+            <br>
+            <br>
+          <li><a href="https://www.bbc.com/future/article/20200714-is-it-safe-to-microwave-food">
+            Is it safe to microwave food?</a></li>
+        </ul>
+      </div>
     </div>
-    <div class= "col col-md-6 ">
-      
+    <div class= "col col-md-5 ">
+      <!-- Todo List -->
+      <div class=" card todolist not-done">
+        <h2>Todos</h2>
+           <input type="text" class="form-control add-todo" placeholder="Add todo">
+               <button id="checkAll" class="btn btn-success">Mark all as done</button>
+               
+               <hr>
+               <ul id="sortable" class="list-unstyled">
+               <li class="ui-state-default">
+                   <div class="checkbox">
+                       <label>
+                           <input type="checkbox" value="" />Take out the trash</label>
+                   </div>
+               </li>
+               <li class="ui-state-default">
+                   <div class="checkbox">
+                       <label>
+                           <input type="checkbox" value="" />Buy bread</label>
+                   </div>
+               </li>
+               <li class="ui-state-default">
+                   <div class="checkbox">
+                       <label>
+                           <input type="checkbox" value="" />Teach penguins to fly</label>
+                   </div>
+               </li>
+           </ul>
+           <div class="todo-footer">
+               <strong><span class="count-todos"></span></strong> Items Left
+           </div>
+       </div>
     </div>
-</div>
+  </div>
 </body>
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>   
