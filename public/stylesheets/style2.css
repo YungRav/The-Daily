@@ -57,4 +57,12 @@ body{
 .topnav a:hover {
     background-color: lightskyblue;
     color: black;
-  }
+}
+
+img {
+    float:right;
+    padding-right:20px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
